@@ -1,0 +1,44 @@
+.thumb-item {
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.thumb-item:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.thumb-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.thumb-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.thumb-img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .thumb-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .thumb-img {
+    width: 40px;
+    height: 40px;
+  }
+}
